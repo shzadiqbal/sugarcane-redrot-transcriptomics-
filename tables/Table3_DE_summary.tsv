@@ -1,0 +1,6 @@
+Contrast	Description	Total_DE	Upregulated	Downregulated
+RC vs RT	Resistant cultivar response to red rot	689	656	33
+SC vs ST	Susceptible cultivar response to red rot	1489	1337	152
+RC vs SC	Baseline cultivar difference (control only)	16884	9555	7329
+RT vs ST	Cultivar difference under infection	13338	6725	6613
+Cultivar × Treatment	Interaction — transcripts with differential response	71	58	13

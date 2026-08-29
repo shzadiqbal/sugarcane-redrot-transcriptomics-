@@ -1,0 +1,13 @@
+Sample	Cultivar	Treatment	Replicate	Total_reads	Passed_filter	Q30_rate	Duplication_pct	HISAT2_alignment_rate	Salmon_mapping_rate
+1RC	Resistant	Control	1	56221436	56207020	93.55	17.48	86.43%	88.84
+1RT	Resistant	Treated	1	51701264	51686384	93.03	13.26	85.82%	88.55
+1SC	Susceptible	Control	1	129727090	129702272	93.81	26.7	79.35%	90.17
+1ST	Susceptible	Treated	1	56098002	56084328	93.74	14.71	76.46%	86.55
+2RC	Resistant	Control	2	60920522	60903086	92.46	14.65	83.50%	86.91
+2RT	Resistant	Treated	2	55978586	55964122	93.81	15.59	86.85%	88.35
+2SC	Susceptible	Control	2	58491788	58467366	93.44	14.57	74.38%	87.21
+2ST	Susceptible	Treated	2	49634086	49618900	93.23	14.21	82.91%	89.21
+3RC	Resistant	Control	3	58939148	58923166	93.67	14.55	86.74%	88.07
+3RT	Resistant	Treated	3	47620360	47606554	91.74	15.23	86.36%	89.92
+3SC	Susceptible	Control	3	74032240	74010122	93.33	14.85	82.25%	88.34
+3ST	Susceptible	Treated	3	50342174	50331106	93.38	21.97	72.96%	85.62

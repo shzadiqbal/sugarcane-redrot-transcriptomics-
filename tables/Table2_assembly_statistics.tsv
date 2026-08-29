@@ -1,0 +1,10 @@
+Assembly_step	Count
+StringTie reference-guided (merged)	566394
+Trinity de novo	1209992
+Combined input to EvidentialGene	1622693
+EvidentialGene okay set (StringTie origin)	344669
+EvidentialGene okay set (Trinity origin)	340662
+EvidentialGene total okay set	685331
+TD2 predicted ORFs	552085
+After CD-HIT 90% protein clustering (SRMT)	[FILL from SRMT stats]
+BUSCO completeness (Poales, n=4896)	99.8% complete (64.8% single-copy, 35.0% duplicated)
