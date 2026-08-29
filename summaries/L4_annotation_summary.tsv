@@ -1,0 +1,7 @@
+=== Combined Annotation Summary ===
+with_diamond_hit	85372
+with_eggnog_annotation	124214
+with_GO_terms	124214
+with_KEGG_KO	124214
+with_both_diamond_and_eggnog	85277
+total_annotated_transcripts	124309

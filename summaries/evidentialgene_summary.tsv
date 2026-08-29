@@ -1,0 +1,13 @@
+=== EvidentialGene Output Summary ===
+Category	Count	Note
+total_processed	796671	All classes (main, alt, althim, etc.)
+total_okay	685331	High-quality non-redundant representatives
+all_from_StringTie	366806	Processed transcripts
+all_from_Trinity	429865	Processed transcripts
+okay_from_StringTie	344669	Okay transcripts only
+okay_from_Trinity	340662	Okay transcripts only
+okay_pct_from_StringTie	50.3	% of okay set
+okay_pct_from_Trinity	49.7	% of okay set
+stringtie_retention_rate	94.0	% of StringTie transcripts kept
+trinity_retention_rate	79.2	% of Trinity transcripts kept
+total_retention_rate	86.0	% of all processed transcripts kept

@@ -1,0 +1,6 @@
+contrast	description	total_sig	up	down
+RC_vs_RT	Resistant: control vs treated (red rot response in resistant)	689	656	33
+SC_vs_ST	Susceptible: control vs treated (red rot response in susceptible)	1489	1337	152
+RC_vs_SC	Baseline cultivar difference (control conditions only)	16884	9555	7329
+RT_vs_ST	Cultivar difference under infection (key biological contrast)	13338	6725	6613
+interaction	Interaction: transcripts responding differently between cultivars	71	13	58

@@ -1,0 +1,10 @@
+=== TD2 ORF Prediction Summary ===
+Metric	Value
+input_transcripts	685331
+predicted_proteins	552085
+orf_prediction_rate_pct	80.6
+transcripts_no_orf	133246
+file                                                                                                format  type     num_seqs      sum_len  min_len  avg_len  max_len   Q1   Q2   Q3  sum_gap  N50  N50_num  Q20(%)  Q30(%)  AvgQual  GC(%)  sum_n
+/home/ubuntu/download/sugarcane_project/L3/transdecoder/all_transcripts_combined.okay.mrna.TD2.pep  FASTA   Protein   552,085  189,172,483       90    342.7    5,440  147  251  442        0  465    2,176       0       0        0      0      2
+file                                                                                                format  type  num_seqs      sum_len  min_len  avg_len  max_len   Q1   Q2     Q3  sum_gap    N50  N50_num  Q20(%)  Q30(%)  AvgQual  GC(%)  sum_n
+/home/ubuntu/download/sugarcane_project/L3/transdecoder/all_transcripts_combined.okay.mrna.TD2.cds  FASTA   DNA    552,085  567,517,449      270    1,028   16,320  441  753  1,326        0  1,395    2,176       0       0        0  52.48      5

@@ -1,0 +1,6 @@
+contrast	total_sig	upregulated	downregulated
+RC_vs_RT	704	628	76
+SC_vs_ST	704	628	76
+RT_vs_ST	15586	8851	6735
+RC_vs_SC	15586	8851	6735
+cultivar_x_treatment_interaction	71	58	13

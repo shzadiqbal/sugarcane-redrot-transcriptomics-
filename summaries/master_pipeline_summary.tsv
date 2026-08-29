@@ -1,0 +1,24 @@
+=== SUGARCANE RED ROT TRANSCRIPTOME PIPELINE — MASTER SUMMARY ===
+Generated: $(date)
+
+STEP	METRIC	VALUE	STATUS
+QC	Mean_Q30_rate	93.1%	PASS
+QC	Reads_passing_filter	99.9%	PASS
+HISAT2	Resistant_mean_alignment	85.95%	PASS
+HISAT2	Susceptible_mean_alignment	78.05%	PASS
+StringTie	Merged_transcripts	566394	PASS
+Trinity	Total_transcripts	1209992	PASS
+Trinity	Total_genes	386303	PASS
+Trinity	N50	2967bp	PASS
+EvidentialGene	Total_okay_transcripts	685331	PASS
+EvidentialGene	StringTie_contribution_pct	50.3	PASS
+EvidentialGene	Trinity_contribution_pct	49.7	PASS
+TD2	Predicted_proteins	552085	PASS
+TD2	ORF_prediction_rate_pct	80.6	PASS
+CD-HIT	Method	protein_90pct_identity	PASS
+BUSCO	Completeness_pct	99.8	EXCEPTIONAL
+BUSCO	Duplicated_pct	35.0	EXPECTED
+BUSCO	Fragmented_pct	0.0	EXCEPTIONAL
+BUSCO	Missing_pct	0.2	EXCEPTIONAL
+Diamond_UniProt	Queries_aligned	85372	PASS
+Diamond_UniProt	Annotation_rate_pct	15.5	NORMAL

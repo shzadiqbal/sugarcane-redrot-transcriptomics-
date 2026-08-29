@@ -1,0 +1,10 @@
+=== CD-HIT + Final Transcriptome Summary ===
+Metric	Value
+input_proteins	552085
+after_cdhit90	173883
+final_transcripts	173883
+reduction_pct	68.5
+file                                                                                        format  type  num_seqs      sum_len  min_len  avg_len  max_len   Q1   Q2     Q3  sum_gap    N50  N50_num  Q20(%)  Q30(%)  AvgQual  GC(%)  sum_n
+/home/ubuntu/download/sugarcane_project/L3/final_transcriptome/Transcriptome_reduced.fasta  FASTA   DNA    173,883  207,081,851      270  1,190.9   30,089  471  837  1,556        0  1,702    4,481       0       0        0  50.67      0
+file                                                                                      format  type     num_seqs     sum_len  min_len  avg_len  max_len   Q1   Q2   Q3  sum_gap  N50  N50_num  Q20(%)  Q30(%)  AvgQual  GC(%)  sum_n
+/home/ubuntu/download/sugarcane_project/L3/final_transcriptome/Transcriptome_reduced.pep  FASTA   Protein   173,883  41,544,453       89    238.9    5,439  119  159  267        0  295    1,515       0       0        0      0      0

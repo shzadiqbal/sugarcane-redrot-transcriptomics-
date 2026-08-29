@@ -1,0 +1,2 @@
+file                                                                                      format  type   num_seqs        sum_len  min_len  avg_len  max_len
+/home/ubuntu/download/sugarcane_project/L3/evidentialgene/all_transcripts_combined.fasta  FASTA   DNA   1,776,386  2,793,846,715       90  1,572.8   37,044
