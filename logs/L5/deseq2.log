@@ -1,0 +1,68 @@
+There were 11 warnings (use warnings() to see them)
+Loading saved DESeq2 object...
+Factor levels:
+  cultivar:   resistant susceptible 
+  treatment:  control treated 
+
+Reference level = resistant + control
+
+DESeq2 result names:
+[1] "Intercept"                           
+[2] "cultivar_susceptible_vs_resistant"   
+[3] "treatment_treated_vs_control"        
+[4] "cultivarsusceptible.treatmenttreated"
+
+--- CONTRAST 1: RC vs RT (resistant: control vs treated) ---
+Using coefficient: treatment_treated_vs_control
+Positive LFC = upregulated in RT relative to RC
+Significant: 689  (Up in RT: 656  Down in RT: 33)
+
+--- CONTRAST 2: SC vs ST (susceptible: control vs treated) ---
+Using: treatment_treated_vs_control + interaction term
+Positive LFC = upregulated in ST relative to SC
+Interaction coefficient identified: cultivarsusceptible.treatmenttreated 
+Significant: 1489  (Up in ST: 1337  Down in ST: 152)
+
+--- CONTRAST 3: RC vs SC (baseline cultivar difference in controls) ---
+Using coefficient: cultivar_susceptible_vs_resistant
+Note: LFC is susceptible/resistant — we report as resistant/susceptible
+Positive LFC (after flip) = higher in resistant control
+Significant: 16884  (Higher in RC: 9555  Higher in SC: 7329)
+
+--- CONTRAST 4: RT vs ST (cultivar difference under red rot infection) ---
+Using: cultivar_susceptible_vs_resistant + interaction term
+This is the KEY biological contrast — who responds better to infection
+Significant: 13338  (Higher in RT: 6725  Higher in ST: 6613)
+
+--- INTERACTION: cultivar x treatment ---
+Using coefficient: cultivarsusceptible.treatmenttreated 
+Positive LFC = treatment effect STRONGER in susceptible than resistant
+Negative LFC = treatment effect STRONGER in resistant than susceptible
+Interaction-significant: 71
+  Stronger in RESISTANT (neg LFC): 13
+  Stronger in SUSCEPTIBLE (pos LFC): 58
+
+Generating corrected heatmap...
+null device 
+          1 
+Heatmap saved
+
+Annotating interaction-significant transcripts...
+
+=== CORRECTED DE SUMMARY ===
+     contrast                                                       description
+1    RC_vs_RT     Resistant: control vs treated (red rot response in resistant)
+2    SC_vs_ST Susceptible: control vs treated (red rot response in susceptible)
+3    RC_vs_SC            Baseline cultivar difference (control conditions only)
+4    RT_vs_ST     Cultivar difference under infection (key biological contrast)
+5 interaction Interaction: transcripts responding differently between cultivars
+  total_sig   up down
+1       689  656   33
+2      1489 1337  152
+3     16884 9555 7329
+4     13338 6725 6613
+5        71   13   58
+
+=== CORRECTED DESEQ2 ANALYSIS COMPLETE: 2026-08-13 09:34:03 ===
+Next step: WGCNA co-expression network analysis
+Load vsd_object.rds in the WGCNA script

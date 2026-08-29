@@ -1,0 +1,1124 @@
+Trinity started: Sun Jun 28 03:48:53 PM PKT 2026
+
+
+     ______  ____   ____  ____   ____  ______  __ __
+    |      ||    \ |    ||    \ |    ||      ||  |  |
+    |      ||  D  ) |  | |  _  | |  | |      ||  |  |
+    |_|  |_||    /  |  | |  |  | |  | |_|  |_||  ~  |
+      |  |  |    \  |  | |  |  | |  |   |  |  |___, |
+      |  |  |  .  \ |  | |  |  | |  |   |  |  |     |
+      |__|  |__|\_||____||__|__||____|  |__|  |____/
+
+    Trinity-v2.15.2
+
+
+
+Left read files: $VAR1 = [
+          '/mnt/d/sugarcane_project/L1/qc/fastp/1RC_R1_clean.fq.gz',
+          '/mnt/d/sugarcane_project/L1/qc/fastp/1RT_R1_clean.fq.gz',
+          '/mnt/d/sugarcane_project/L1/qc/fastp/1SC_R1_clean.fq.gz',
+          '/mnt/d/sugarcane_project/L1/qc/fastp/1ST_R1_clean.fq.gz',
+          '/mnt/d/sugarcane_project/L1/qc/fastp/2RC_R1_clean.fq.gz',
+          '/mnt/d/sugarcane_project/L1/qc/fastp/2RT_R1_clean.fq.gz',
+          '/mnt/d/sugarcane_project/L1/qc/fastp/2SC_R1_clean.fq.gz',
+          '/mnt/d/sugarcane_project/L1/qc/fastp/2ST_R1_clean.fq.gz',
+          '/mnt/d/sugarcane_project/L1/qc/fastp/3RC_R1_clean.fq.gz',
+          '/mnt/d/sugarcane_project/L1/qc/fastp/3RT_R1_clean.fq.gz',
+          '/mnt/d/sugarcane_project/L1/qc/fastp/3SC_R1_clean.fq.gz',
+          '/mnt/d/sugarcane_project/L1/qc/fastp/3ST_R1_clean.fq.gz'
+        ];
+Right read files: $VAR1 = [
+          '/mnt/d/sugarcane_project/L1/qc/fastp/1RC_R2_clean.fq.gz',
+          '/mnt/d/sugarcane_project/L1/qc/fastp/1RT_R2_clean.fq.gz',
+          '/mnt/d/sugarcane_project/L1/qc/fastp/1SC_R2_clean.fq.gz',
+          '/mnt/d/sugarcane_project/L1/qc/fastp/1ST_R2_clean.fq.gz',
+          '/mnt/d/sugarcane_project/L1/qc/fastp/2RC_R2_clean.fq.gz',
+          '/mnt/d/sugarcane_project/L1/qc/fastp/2RT_R2_clean.fq.gz',
+          '/mnt/d/sugarcane_project/L1/qc/fastp/2SC_R2_clean.fq.gz',
+          '/mnt/d/sugarcane_project/L1/qc/fastp/2ST_R2_clean.fq.gz',
+          '/mnt/d/sugarcane_project/L1/qc/fastp/3RC_R2_clean.fq.gz',
+          '/mnt/d/sugarcane_project/L1/qc/fastp/3RT_R2_clean.fq.gz',
+          '/mnt/d/sugarcane_project/L1/qc/fastp/3SC_R2_clean.fq.gz',
+          '/mnt/d/sugarcane_project/L1/qc/fastp/3ST_R2_clean.fq.gz'
+        ];
+Trinity version: Trinity-v2.15.2
+-ERROR: couldn't run the network check to confirm latest Trinity software version.
+
+Sunday, June 28, 2026: 15:48:58	CMD: java -Xmx64m -XX:ParallelGCThreads=2  -jar /home/szd/miniconda3/envs/sugarcane/bin/util/support_scripts/ExitTester.jar 0
+Sunday, June 28, 2026: 15:48:59	CMD: java -Xmx4g -XX:ParallelGCThreads=2  -jar /home/szd/miniconda3/envs/sugarcane/bin/util/support_scripts/ExitTester.jar 1
+Sunday, June 28, 2026: 15:48:59	CMD: mkdir -p /mnt/d/sugarcane_project/L3/trinity/trinity_out
+Sunday, June 28, 2026: 15:48:59	CMD: mkdir -p /mnt/d/sugarcane_project/L3/trinity/trinity_out/chrysalis
+
+
+----------------------------------------------------------------------------------
+-------------- Trinity Phase 1: Clustering of RNA-Seq Reads  ---------------------
+----------------------------------------------------------------------------------
+
+---------------------------------------------------------------
+------------ In silico Read Normalization ---------------------
+-- (Removing Excess Reads Beyond 200 Coverage --
+---------------------------------------------------------------
+
+# running normalization on reads: $VAR1 = [
+          [
+            '/mnt/d/sugarcane_project/L1/qc/fastp/1RC_R1_clean.fq.gz',
+            '/mnt/d/sugarcane_project/L1/qc/fastp/1RT_R1_clean.fq.gz',
+            '/mnt/d/sugarcane_project/L1/qc/fastp/1SC_R1_clean.fq.gz',
+            '/mnt/d/sugarcane_project/L1/qc/fastp/1ST_R1_clean.fq.gz',
+            '/mnt/d/sugarcane_project/L1/qc/fastp/2RC_R1_clean.fq.gz',
+            '/mnt/d/sugarcane_project/L1/qc/fastp/2RT_R1_clean.fq.gz',
+            '/mnt/d/sugarcane_project/L1/qc/fastp/2SC_R1_clean.fq.gz',
+            '/mnt/d/sugarcane_project/L1/qc/fastp/2ST_R1_clean.fq.gz',
+            '/mnt/d/sugarcane_project/L1/qc/fastp/3RC_R1_clean.fq.gz',
+            '/mnt/d/sugarcane_project/L1/qc/fastp/3RT_R1_clean.fq.gz',
+            '/mnt/d/sugarcane_project/L1/qc/fastp/3SC_R1_clean.fq.gz',
+            '/mnt/d/sugarcane_project/L1/qc/fastp/3ST_R1_clean.fq.gz'
+          ],
+          [
+            '/mnt/d/sugarcane_project/L1/qc/fastp/1RC_R2_clean.fq.gz',
+            '/mnt/d/sugarcane_project/L1/qc/fastp/1RT_R2_clean.fq.gz',
+            '/mnt/d/sugarcane_project/L1/qc/fastp/1SC_R2_clean.fq.gz',
+            '/mnt/d/sugarcane_project/L1/qc/fastp/1ST_R2_clean.fq.gz',
+            '/mnt/d/sugarcane_project/L1/qc/fastp/2RC_R2_clean.fq.gz',
+            '/mnt/d/sugarcane_project/L1/qc/fastp/2RT_R2_clean.fq.gz',
+            '/mnt/d/sugarcane_project/L1/qc/fastp/2SC_R2_clean.fq.gz',
+            '/mnt/d/sugarcane_project/L1/qc/fastp/2ST_R2_clean.fq.gz',
+            '/mnt/d/sugarcane_project/L1/qc/fastp/3RC_R2_clean.fq.gz',
+            '/mnt/d/sugarcane_project/L1/qc/fastp/3RT_R2_clean.fq.gz',
+            '/mnt/d/sugarcane_project/L1/qc/fastp/3SC_R2_clean.fq.gz',
+            '/mnt/d/sugarcane_project/L1/qc/fastp/3ST_R2_clean.fq.gz'
+          ]
+        ];
+
+
+Sunday, June 28, 2026: 15:48:59	CMD: /home/szd/miniconda3/envs/sugarcane/bin/util/insilico_read_normalization.pl --seqType fq --JM 18G  --max_cov 200 --min_cov 1 --CPU 6 --output /mnt/d/sugarcane_project/L3/trinity/trinity_out/insilico_read_normalization --max_CV 10000  --left /mnt/d/sugarcane_project/L1/qc/fastp/1RC_R1_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/1RT_R1_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/1SC_R1_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/1ST_R1_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/2RC_R1_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/2RT_R1_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/2SC_R1_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/2ST_R1_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/3RC_R1_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/3RT_R1_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/3SC_R1_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/3ST_R1_clean.fq.gz --right /mnt/d/sugarcane_project/L1/qc/fastp/1RC_R2_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/1RT_R2_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/1SC_R2_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/1ST_R2_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/2RC_R2_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/2RT_R2_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/2SC_R2_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/2ST_R2_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/3RC_R2_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/3RT_R2_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/3SC_R2_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/3ST_R2_clean.fq.gz --pairs_together  --PARALLEL_STATS  
+-prepping seqs
+Converting input files. (both directions in parallel);CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /mnt/d/sugarcane_project/L1/qc/fastp/1RC_R1_clean.fq.gz) >> left.fa
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /mnt/d/sugarcane_project/L1/qc/fastp/1RC_R2_clean.fq.gz) >> right.fa
+CMD finished (660 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /mnt/d/sugarcane_project/L1/qc/fastp/1RT_R1_clean.fq.gz) >> left.fa
+CMD finished (663 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /mnt/d/sugarcane_project/L1/qc/fastp/1RT_R2_clean.fq.gz) >> right.fa
+CMD finished (685 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /mnt/d/sugarcane_project/L1/qc/fastp/1SC_R1_clean.fq.gz) >> left.fa
+CMD finished (702 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /mnt/d/sugarcane_project/L1/qc/fastp/1SC_R2_clean.fq.gz) >> right.fa
+CMD finished (2007 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /mnt/d/sugarcane_project/L1/qc/fastp/1ST_R1_clean.fq.gz) >> left.fa
+CMD finished (2028 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /mnt/d/sugarcane_project/L1/qc/fastp/1ST_R2_clean.fq.gz) >> right.fa
+CMD finished (884 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /mnt/d/sugarcane_project/L1/qc/fastp/2RC_R1_clean.fq.gz) >> left.fa
+CMD finished (897 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /mnt/d/sugarcane_project/L1/qc/fastp/2RC_R2_clean.fq.gz) >> right.fa
+CMD finished (936 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /mnt/d/sugarcane_project/L1/qc/fastp/2RT_R1_clean.fq.gz) >> left.fa
+CMD finished (935 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /mnt/d/sugarcane_project/L1/qc/fastp/2RT_R2_clean.fq.gz) >> right.fa
+CMD finished (819 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /mnt/d/sugarcane_project/L1/qc/fastp/2SC_R1_clean.fq.gz) >> left.fa
+CMD finished (840 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /mnt/d/sugarcane_project/L1/qc/fastp/2SC_R2_clean.fq.gz) >> right.fa
+CMD finished (864 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /mnt/d/sugarcane_project/L1/qc/fastp/2ST_R1_clean.fq.gz) >> left.fa
+CMD finished (888 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /mnt/d/sugarcane_project/L1/qc/fastp/2ST_R2_clean.fq.gz) >> right.fa
+CMD finished (714 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /mnt/d/sugarcane_project/L1/qc/fastp/3RC_R1_clean.fq.gz) >> left.fa
+CMD finished (707 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /mnt/d/sugarcane_project/L1/qc/fastp/3RC_R2_clean.fq.gz) >> right.fa
+CMD finished (842 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /mnt/d/sugarcane_project/L1/qc/fastp/3RT_R1_clean.fq.gz) >> left.fa
+CMD finished (888 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /mnt/d/sugarcane_project/L1/qc/fastp/3RT_R2_clean.fq.gz) >> right.fa
+CMD finished (767 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /mnt/d/sugarcane_project/L1/qc/fastp/3SC_R1_clean.fq.gz) >> left.fa
+CMD finished (775 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /mnt/d/sugarcane_project/L1/qc/fastp/3SC_R2_clean.fq.gz) >> right.fa
+CMD finished (1070 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /mnt/d/sugarcane_project/L1/qc/fastp/3ST_R1_clean.fq.gz) >> left.fa
+CMD finished (1114 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /mnt/d/sugarcane_project/L1/qc/fastp/3ST_R2_clean.fq.gz) >> right.fa
+CMD finished (753 seconds)
+CMD finished (630 seconds)
+CMD: touch left.fa.ok
+CMD finished (0 seconds)
+CMD: touch right.fa.ok
+CMD finished (0 seconds)
+ Done converting input files. CMD: cat left.fa right.fa > both.fa
+cat: write error: Input/output error
+Error, cmd: cat left.fa right.fa > both.fa died with ret 256 at /home/szd/miniconda3/envs/sugarcane/bin/util/insilico_read_normalization.pl line 807.
+Error, cmd: /home/szd/miniconda3/envs/sugarcane/bin/util/insilico_read_normalization.pl --seqType fq --JM 18G  --max_cov 200 --min_cov 1 --CPU 6 --output /mnt/d/sugarcane_project/L3/trinity/trinity_out/insilico_read_normalization --max_CV 10000  --left /mnt/d/sugarcane_project/L1/qc/fastp/1RC_R1_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/1RT_R1_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/1SC_R1_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/1ST_R1_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/2RC_R1_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/2RT_R1_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/2SC_R1_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/2ST_R1_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/3RC_R1_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/3RT_R1_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/3SC_R1_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/3ST_R1_clean.fq.gz --right /mnt/d/sugarcane_project/L1/qc/fastp/1RC_R2_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/1RT_R2_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/1SC_R2_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/1ST_R2_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/2RC_R2_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/2RT_R2_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/2SC_R2_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/2ST_R2_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/3RC_R2_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/3RT_R2_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/3SC_R2_clean.fq.gz,/mnt/d/sugarcane_project/L1/qc/fastp/3ST_R2_clean.fq.gz --pairs_together  --PARALLEL_STATS   died with ret 512 at /home/szd/miniconda3/envs/sugarcane/bin/Trinity line 2919.
+	main::process_cmd("/home/szd/miniconda3/envs/sugarcane/bin/util/insilico_read_no"...) called at /home/szd/miniconda3/envs/sugarcane/bin/Trinity line 3472
+	main::normalize("/mnt/d/sugarcane_project/L3/trinity/trinity_out/insilico_read"..., 200, ARRAY(0x64abc2208d48), ARRAY(0x64abc2208d78)) called at /home/szd/miniconda3/envs/sugarcane/bin/Trinity line 3412
+	main::run_normalization(200, ARRAY(0x64abc2208d48), ARRAY(0x64abc2208d78)) called at /home/szd/miniconda3/envs/sugarcane/bin/Trinity line 1450
+Trinity restarted: Mon Jun 29 05:01:24 AM PKT 2026
+
+
+     ______  ____   ____  ____   ____  ______  __ __
+    |      ||    \ |    ||    \ |    ||      ||  |  |
+    |      ||  D  ) |  | |  _  | |  | |      ||  |  |
+    |_|  |_||    /  |  | |  |  | |  | |_|  |_||  ~  |
+      |  |  |    \  |  | |  |  | |  |   |  |  |___, |
+      |  |  |  .  \ |  | |  |  | |  |   |  |  |     |
+      |__|  |__|\_||____||__|__||____|  |__|  |____/
+
+    Trinity-v2.15.2
+
+
+
+Left read files: $VAR1 = [
+          '/mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz'
+        ];
+Right read files: $VAR1 = [
+          '/mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz'
+        ];
+Trinity version: Trinity-v2.15.2
+-currently using the latest production release of Trinity.
+
+Monday, June 29, 2026: 05:01:25	CMD: java -Xmx64m -XX:ParallelGCThreads=2  -jar /home/szd/miniconda3/envs/sugarcane/bin/util/support_scripts/ExitTester.jar 0
+Monday, June 29, 2026: 05:01:25	CMD: java -Xmx4g -XX:ParallelGCThreads=2  -jar /home/szd/miniconda3/envs/sugarcane/bin/util/support_scripts/ExitTester.jar 1
+Monday, June 29, 2026: 05:01:25	CMD: mkdir -p /mnt/d/sugarcane_project/L3/trinity/trinity_out
+Monday, June 29, 2026: 05:01:26	CMD: mkdir -p /mnt/d/sugarcane_project/L3/trinity/trinity_out/chrysalis
+
+
+----------------------------------------------------------------------------------
+-------------- Trinity Phase 1: Clustering of RNA-Seq Reads  ---------------------
+----------------------------------------------------------------------------------
+
+---------------------------------------------------------------
+------------ In silico Read Normalization ---------------------
+-- (Removing Excess Reads Beyond 200 Coverage --
+---------------------------------------------------------------
+
+# running normalization on reads: $VAR1 = [
+          [
+            '/mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz'
+          ],
+          [
+            '/mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz'
+          ]
+        ];
+
+
+Monday, June 29, 2026: 05:01:26	CMD: /home/szd/miniconda3/envs/sugarcane/bin/util/insilico_read_normalization.pl --seqType fq --JM 18G  --max_cov 200 --min_cov 1 --CPU 6 --output /mnt/d/sugarcane_project/L3/trinity/trinity_out/insilico_read_normalization --max_CV 10000  --left /mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz --right /mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz --pairs_together  --PARALLEL_STATS  
+-prepping seqs
+Converting input files. (both directions in parallel);CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz) >> left.fa
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz) >> right.fa
+CMD finished (400 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz) >> left.fa
+CMD finished (400 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz) >> right.fa
+CMD finished (398 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz) >> right.fa
+CMD finished (399 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz) >> left.fa
+CMD finished (936 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz) >> left.fa
+CMD finished (937 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz) >> right.fa
+CMD finished (332 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz) >> right.fa
+CMD finished (334 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz) >> left.fa
+CMD finished (349 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz) >> right.fa
+CMD finished (351 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz) >> left.fa
+CMD finished (302 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz) >> right.fa
+CMD finished (305 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz) >> left.fa
+CMD finished (332 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz) >> right.fa
+CMD finished (337 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz) >> left.fa
+CMD finished (301 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz) >> right.fa
+CMD finished (299 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz) >> left.fa
+CMD finished (327 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz) >> right.fa
+CMD finished (335 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz) >> left.fa
+CMD finished (275 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz) >> right.fa
+CMD finished (269 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz) >> left.fa
+CMD finished (483 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz) >> right.fa
+CMD finished (484 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz) >> left.fa
+CMD finished (350 seconds)
+CMD finished (350 seconds)
+CMD: touch left.fa.ok
+CMD finished (0 seconds)
+CMD: touch right.fa.ok
+CMD finished (0 seconds)
+ Done converting input files. CMD: cat left.fa right.fa > both.fa
+CMD finished (3343 seconds)
+CMD: touch both.fa.ok
+CMD finished (0 seconds)
+-kmer counting.
+-------------------------------------------
+----------- Jellyfish  --------------------
+-- (building a k-mer catalog from reads) --
+-------------------------------------------
+
+CMD: jellyfish count -t 6 -m 25 -s 100000000  --canonical  both.fa
+nohup: ignoring input
+
+
+     ______  ____   ____  ____   ____  ______  __ __
+    |      ||    \ |    ||    \ |    ||      ||  |  |
+    |      ||  D  ) |  | |  _  | |  | |      ||  |  |
+    |_|  |_||    /  |  | |  |  | |  | |_|  |_||  ~  |
+      |  |  |    \  |  | |  |  | |  |   |  |  |___, |
+      |  |  |  .  \ |  | |  |  | |  |   |  |  |     |
+      |__|  |__|\_||____||__|__||____|  |__|  |____/
+
+    Trinity-v2.15.2
+
+
+
+Left read files: $VAR1 = [
+          '/mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz'
+        ];
+Right read files: $VAR1 = [
+          '/mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz'
+        ];
+Trinity version: Trinity-v2.15.2
+-currently using the latest production release of Trinity.
+
+Monday, June 29, 2026: 10:29:44	CMD: java -Xmx64m -XX:ParallelGCThreads=2  -jar /home/szd/miniconda3/envs/sugarcane/bin/util/support_scripts/ExitTester.jar 0
+Monday, June 29, 2026: 10:29:44	CMD: java -Xmx4g -XX:ParallelGCThreads=2  -jar /home/szd/miniconda3/envs/sugarcane/bin/util/support_scripts/ExitTester.jar 1
+
+
+----------------------------------------------------------------------------------
+-------------- Trinity Phase 1: Clustering of RNA-Seq Reads  ---------------------
+----------------------------------------------------------------------------------
+
+---------------------------------------------------------------
+------------ In silico Read Normalization ---------------------
+-- (Removing Excess Reads Beyond 200 Coverage --
+---------------------------------------------------------------
+
+# running normalization on reads: $VAR1 = [
+          [
+            '/mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz'
+          ],
+          [
+            '/mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz'
+          ]
+        ];
+
+
+Monday, June 29, 2026: 10:29:44	CMD: /home/szd/miniconda3/envs/sugarcane/bin/util/insilico_read_normalization.pl --seqType fq --JM 18G  --max_cov 200 --min_cov 1 --CPU 6 --output /mnt/d/sugarcane_project/L3/trinity/trinity_out/insilico_read_normalization --max_CV 10000  --left /mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz --right /mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz --pairs_together  --PARALLEL_STATS  
+-prepping seqs
+Converting input files. (both directions in parallel); Left file exists, nothing to do; Right file exists, nothing to do; Done converting input files. -kmer counting.
+-------------------------------------------
+----------- Jellyfish  --------------------
+-- (building a k-mer catalog from reads) --
+-------------------------------------------
+
+CMD: jellyfish count -t 6 -m 25 -s 100000000  --canonical  both.fa
+nohup: ignoring input
+
+
+     ______  ____   ____  ____   ____  ______  __ __
+    |      ||    \ |    ||    \ |    ||      ||  |  |
+    |      ||  D  ) |  | |  _  | |  | |      ||  |  |
+    |_|  |_||    /  |  | |  |  | |  | |_|  |_||  ~  |
+      |  |  |    \  |  | |  |  | |  |   |  |  |___, |
+      |  |  |  .  \ |  | |  |  | |  |   |  |  |     |
+      |__|  |__|\_||____||__|__||____|  |__|  |____/
+
+    Trinity-v2.15.2
+
+
+
+Left read files: $VAR1 = [
+          '/mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz'
+        ];
+Right read files: $VAR1 = [
+          '/mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz'
+        ];
+Trinity version: Trinity-v2.15.2
+-currently using the latest production release of Trinity.
+
+Monday, June 29, 2026: 18:09:08	CMD: java -Xmx64m -XX:ParallelGCThreads=2  -jar /home/szd/miniconda3/envs/sugarcane/bin/util/support_scripts/ExitTester.jar 0
+Monday, June 29, 2026: 18:09:08	CMD: java -Xmx4g -XX:ParallelGCThreads=2  -jar /home/szd/miniconda3/envs/sugarcane/bin/util/support_scripts/ExitTester.jar 1
+
+
+----------------------------------------------------------------------------------
+-------------- Trinity Phase 1: Clustering of RNA-Seq Reads  ---------------------
+----------------------------------------------------------------------------------
+
+---------------------------------------------------------------
+------------ In silico Read Normalization ---------------------
+-- (Removing Excess Reads Beyond 200 Coverage --
+---------------------------------------------------------------
+
+# running normalization on reads: $VAR1 = [
+          [
+            '/mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz'
+          ],
+          [
+            '/mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz'
+          ]
+        ];
+
+
+Monday, June 29, 2026: 18:09:08	CMD: /home/szd/miniconda3/envs/sugarcane/bin/util/insilico_read_normalization.pl --seqType fq --JM 18G  --max_cov 200 --min_cov 1 --CPU 6 --output /mnt/d/sugarcane_project/L3/trinity/trinity_out/insilico_read_normalization --max_CV 10000  --left /mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz --right /mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz --pairs_together  --PARALLEL_STATS  
+-prepping seqs
+Converting input files. (both directions in parallel); Left file exists, nothing to do; Right file exists, nothing to do; Done converting input files. -kmer counting.
+-------------------------------------------
+----------- Jellyfish  --------------------
+-- (building a k-mer catalog from reads) --
+-------------------------------------------
+
+CMD: jellyfish count -t 6 -m 25 -s 100000000  --canonical  both.fa
+CMD finished (7625 seconds)
+CMD: jellyfish histo -t 6 -o jellyfish.K25.min2.kmers.fa.histo mer_counts.jf
+CMD finished (774 seconds)
+CMD: jellyfish dump -L 2 mer_counts.jf > jellyfish.K25.min2.kmers.fa
+CMD finished (1462 seconds)
+CMD: touch jellyfish.K25.min2.kmers.fa.success
+CMD finished (0 seconds)
+-generating stats files
+CMD: /home/szd/miniconda3/envs/sugarcane/bin/util/..//Inchworm/bin/fastaToKmerCoverageStats --reads left.fa --kmers jellyfish.K25.min2.kmers.fa --kmer_size 25  --num_threads 3  --DS  > left.fa.K25.stats
+-reading Kmer occurrences...
+CMD: /home/szd/miniconda3/envs/sugarcane/bin/util/..//Inchworm/bin/fastaToKmerCoverageStats --reads right.fa --kmers jellyfish.K25.min2.kmers.fa --kmer_size 25  --num_threads 3  --DS  > right.fa.K25.stats
+-reading Kmer occurrences...
+nohup: ignoring input
+
+
+     ______  ____   ____  ____   ____  ______  __ __
+    |      ||    \ |    ||    \ |    ||      ||  |  |
+    |      ||  D  ) |  | |  _  | |  | |      ||  |  |
+    |_|  |_||    /  |  | |  |  | |  | |_|  |_||  ~  |
+      |  |  |    \  |  | |  |  | |  |   |  |  |___, |
+      |  |  |  .  \ |  | |  |  | |  |   |  |  |     |
+      |__|  |__|\_||____||__|__||____|  |__|  |____/
+
+    Trinity-v2.15.2
+
+
+
+Left read files: $VAR1 = [
+          '/mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz'
+        ];
+Right read files: $VAR1 = [
+          '/mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz'
+        ];
+Trinity version: Trinity-v2.15.2
+-currently using the latest production release of Trinity.
+
+Monday, June 29, 2026: 22:25:04	CMD: java -Xmx64m -XX:ParallelGCThreads=2  -jar /home/szd/miniconda3/envs/sugarcane/bin/util/support_scripts/ExitTester.jar 0
+Monday, June 29, 2026: 22:25:04	CMD: java -Xmx4g -XX:ParallelGCThreads=2  -jar /home/szd/miniconda3/envs/sugarcane/bin/util/support_scripts/ExitTester.jar 1
+
+
+----------------------------------------------------------------------------------
+-------------- Trinity Phase 1: Clustering of RNA-Seq Reads  ---------------------
+----------------------------------------------------------------------------------
+
+---------------------------------------------------------------
+------------ In silico Read Normalization ---------------------
+-- (Removing Excess Reads Beyond 200 Coverage --
+---------------------------------------------------------------
+
+# running normalization on reads: $VAR1 = [
+          [
+            '/mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz'
+          ],
+          [
+            '/mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz'
+          ]
+        ];
+
+
+Monday, June 29, 2026: 22:25:04	CMD: /home/szd/miniconda3/envs/sugarcane/bin/util/insilico_read_normalization.pl --seqType fq --JM 18G  --max_cov 200 --min_cov 1 --CPU 6 --output /mnt/d/sugarcane_project/L3/trinity/trinity_out/insilico_read_normalization --max_CV 10000  --left /mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz --right /mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz --pairs_together  --PARALLEL_STATS  
+-prepping seqs
+Converting input files. (both directions in parallel); Left file exists, nothing to do; Right file exists, nothing to do; Done converting input files. -kmer counting.
+-generating stats files
+CMD: /home/szd/miniconda3/envs/sugarcane/bin/util/..//Inchworm/bin/fastaToKmerCoverageStats --reads left.fa --kmers jellyfish.K25.min2.kmers.fa --kmer_size 25  --num_threads 3  --DS  > left.fa.K25.stats
+CMD: /home/szd/miniconda3/envs/sugarcane/bin/util/..//Inchworm/bin/fastaToKmerCoverageStats --reads right.fa --kmers jellyfish.K25.min2.kmers.fa --kmer_size 25  --num_threads 3  --DS  > right.fa.K25.stats
+-reading Kmer occurrences...
+-reading Kmer occurrences...
+nohup: ignoring input
+
+
+     ______  ____   ____  ____   ____  ______  __ __
+    |      ||    \ |    ||    \ |    ||      ||  |  |
+    |      ||  D  ) |  | |  _  | |  | |      ||  |  |
+    |_|  |_||    /  |  | |  |  | |  | |_|  |_||  ~  |
+      |  |  |    \  |  | |  |  | |  |   |  |  |___, |
+      |  |  |  .  \ |  | |  |  | |  |   |  |  |     |
+      |__|  |__|\_||____||__|__||____|  |__|  |____/
+
+    Trinity-v2.15.2
+
+
+
+Left read files: $VAR1 = [
+          '/mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz'
+        ];
+Right read files: $VAR1 = [
+          '/mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz'
+        ];
+Trinity version: Trinity-v2.15.2
+-currently using the latest production release of Trinity.
+
+Monday, June 29, 2026: 22:56:07	CMD: java -Xmx64m -XX:ParallelGCThreads=2  -jar /home/szd/miniconda3/envs/sugarcane/bin/util/support_scripts/ExitTester.jar 0
+Monday, June 29, 2026: 22:56:08	CMD: java -Xmx4g -XX:ParallelGCThreads=2  -jar /home/szd/miniconda3/envs/sugarcane/bin/util/support_scripts/ExitTester.jar 1
+
+
+----------------------------------------------------------------------------------
+-------------- Trinity Phase 1: Clustering of RNA-Seq Reads  ---------------------
+----------------------------------------------------------------------------------
+
+---------------------------------------------------------------
+------------ In silico Read Normalization ---------------------
+-- (Removing Excess Reads Beyond 200 Coverage --
+---------------------------------------------------------------
+
+# running normalization on reads: $VAR1 = [
+          [
+            '/mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz'
+          ],
+          [
+            '/mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz'
+          ]
+        ];
+
+
+Monday, June 29, 2026: 22:56:08	CMD: /home/szd/miniconda3/envs/sugarcane/bin/util/insilico_read_normalization.pl --seqType fq --JM 15G  --max_cov 200 --min_cov 1 --CPU 4 --output /mnt/d/sugarcane_project/L3/trinity/trinity_out/insilico_read_normalization --max_CV 10000  --left /mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz --right /mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz --pairs_together  --PARALLEL_STATS  
+-prepping seqs
+Converting input files. (both directions in parallel); Left file exists, nothing to do; Right file exists, nothing to do; Done converting input files. -kmer counting.
+-generating stats files
+CMD: /home/szd/miniconda3/envs/sugarcane/bin/util/..//Inchworm/bin/fastaToKmerCoverageStats --reads left.fa --kmers jellyfish.K25.min2.kmers.fa --kmer_size 25  --num_threads 2  --DS  > left.fa.K25.stats
+CMD: /home/szd/miniconda3/envs/sugarcane/bin/util/..//Inchworm/bin/fastaToKmerCoverageStats --reads right.fa --kmers jellyfish.K25.min2.kmers.fa --kmer_size 25  --num_threads 2  --DS  > right.fa.K25.stats
+-reading Kmer occurrences...
+-reading Kmer occurrences...
+nohup: ignoring input
+
+
+     ______  ____   ____  ____   ____  ______  __ __
+    |      ||    \ |    ||    \ |    ||      ||  |  |
+    |      ||  D  ) |  | |  _  | |  | |      ||  |  |
+    |_|  |_||    /  |  | |  |  | |  | |_|  |_||  ~  |
+      |  |  |    \  |  | |  |  | |  |   |  |  |___, |
+      |  |  |  .  \ |  | |  |  | |  |   |  |  |     |
+      |__|  |__|\_||____||__|__||____|  |__|  |____/
+
+    Trinity-v2.15.2
+
+
+
+Left read files: $VAR1 = [
+          '/mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz'
+        ];
+Right read files: $VAR1 = [
+          '/mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz'
+        ];
+Trinity version: Trinity-v2.15.2
+-currently using the latest production release of Trinity.
+
+Tuesday, June 30, 2026: 06:00:45	CMD: java -Xmx64m -XX:ParallelGCThreads=2  -jar /home/szd/miniconda3/envs/sugarcane/bin/util/support_scripts/ExitTester.jar 0
+Tuesday, June 30, 2026: 06:00:45	CMD: java -Xmx4g -XX:ParallelGCThreads=2  -jar /home/szd/miniconda3/envs/sugarcane/bin/util/support_scripts/ExitTester.jar 1
+
+
+----------------------------------------------------------------------------------
+-------------- Trinity Phase 1: Clustering of RNA-Seq Reads  ---------------------
+----------------------------------------------------------------------------------
+
+---------------------------------------------------------------
+------------ In silico Read Normalization ---------------------
+-- (Removing Excess Reads Beyond 200 Coverage --
+---------------------------------------------------------------
+
+# running normalization on reads: $VAR1 = [
+          [
+            '/mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz'
+          ],
+          [
+            '/mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz'
+          ]
+        ];
+
+
+Tuesday, June 30, 2026: 06:00:45	CMD: /home/szd/miniconda3/envs/sugarcane/bin/util/insilico_read_normalization.pl --seqType fq --JM 18G  --max_cov 200 --min_cov 1 --CPU 6 --output /mnt/d/sugarcane_project/L3/trinity/trinity_out/insilico_read_normalization --max_CV 10000  --left /mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz --right /mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz --pairs_together  --PARALLEL_STATS  
+-prepping seqs
+Converting input files. (both directions in parallel); Left file exists, nothing to do; Right file exists, nothing to do; Done converting input files. -kmer counting.
+-generating stats files
+CMD: /home/szd/miniconda3/envs/sugarcane/bin/util/..//Inchworm/bin/fastaToKmerCoverageStats --reads left.fa --kmers jellyfish.K25.min2.kmers.fa --kmer_size 25  --num_threads 3  --DS  > left.fa.K25.stats
+CMD: /home/szd/miniconda3/envs/sugarcane/bin/util/..//Inchworm/bin/fastaToKmerCoverageStats --reads right.fa --kmers jellyfish.K25.min2.kmers.fa --kmer_size 25  --num_threads 3  --DS  > right.fa.K25.stats
+-reading Kmer occurrences...
+-reading Kmer occurrences...
+nohup: ignoring input
+
+
+     ______  ____   ____  ____   ____  ______  __ __
+    |      ||    \ |    ||    \ |    ||      ||  |  |
+    |      ||  D  ) |  | |  _  | |  | |      ||  |  |
+    |_|  |_||    /  |  | |  |  | |  | |_|  |_||  ~  |
+      |  |  |    \  |  | |  |  | |  |   |  |  |___, |
+      |  |  |  .  \ |  | |  |  | |  |   |  |  |     |
+      |__|  |__|\_||____||__|__||____|  |__|  |____/
+
+    Trinity-v2.15.2
+
+
+
+Left read files: $VAR1 = [
+          '/mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz'
+        ];
+Right read files: $VAR1 = [
+          '/mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz'
+        ];
+Trinity version: Trinity-v2.15.2
+-currently using the latest production release of Trinity.
+
+Tuesday, June 30, 2026: 06:32:19	CMD: java -Xmx64m -XX:ParallelGCThreads=2  -jar /home/szd/miniconda3/envs/sugarcane/bin/util/support_scripts/ExitTester.jar 0
+Tuesday, June 30, 2026: 06:32:19	CMD: java -Xmx4g -XX:ParallelGCThreads=2  -jar /home/szd/miniconda3/envs/sugarcane/bin/util/support_scripts/ExitTester.jar 1
+
+
+----------------------------------------------------------------------------------
+-------------- Trinity Phase 1: Clustering of RNA-Seq Reads  ---------------------
+----------------------------------------------------------------------------------
+
+---------------------------------------------------------------
+------------ In silico Read Normalization ---------------------
+-- (Removing Excess Reads Beyond 200 Coverage --
+---------------------------------------------------------------
+
+# running normalization on reads: $VAR1 = [
+          [
+            '/mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz'
+          ],
+          [
+            '/mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz'
+          ]
+        ];
+
+
+Tuesday, June 30, 2026: 06:32:19	CMD: /home/szd/miniconda3/envs/sugarcane/bin/util/insilico_read_normalization.pl --seqType fq --JM 18G  --max_cov 200 --min_cov 1 --CPU 6 --output /mnt/d/sugarcane_project/L3/trinity/trinity_out/insilico_read_normalization --max_CV 10000  --left /mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz --right /mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz --pairs_together  --PARALLEL_STATS  
+-prepping seqs
+Converting input files. (both directions in parallel); Left file exists, nothing to do; Right file exists, nothing to do; Done converting input files. -kmer counting.
+-generating stats files
+CMD: /home/szd/miniconda3/envs/sugarcane/bin/util/..//Inchworm/bin/fastaToKmerCoverageStats --reads left.fa --kmers jellyfish.K25.min2.kmers.fa --kmer_size 25  --num_threads 3  --DS  > left.fa.K25.stats
+CMD: /home/szd/miniconda3/envs/sugarcane/bin/util/..//Inchworm/bin/fastaToKmerCoverageStats --reads right.fa --kmers jellyfish.K25.min2.kmers.fa --kmer_size 25  --num_threads 3  --DS  > right.fa.K25.stats
+-reading Kmer occurrences...
+-reading Kmer occurrences...
+nohup: ignoring input
+
+
+     ______  ____   ____  ____   ____  ______  __ __
+    |      ||    \ |    ||    \ |    ||      ||  |  |
+    |      ||  D  ) |  | |  _  | |  | |      ||  |  |
+    |_|  |_||    /  |  | |  |  | |  | |_|  |_||  ~  |
+      |  |  |    \  |  | |  |  | |  |   |  |  |___, |
+      |  |  |  .  \ |  | |  |  | |  |   |  |  |     |
+      |__|  |__|\_||____||__|__||____|  |__|  |____/
+
+    Trinity-v2.15.2
+
+
+
+Left read files: $VAR1 = [
+          '/mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz'
+        ];
+Right read files: $VAR1 = [
+          '/mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz'
+        ];
+Trinity version: Trinity-v2.15.2
+-ERROR: couldn't parse latest version tag info from github: {"message":"API rate limit exceeded for 223.123.35.94. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+
+Wednesday, July 1, 2026: 09:12:38	CMD: java -Xmx64m -XX:ParallelGCThreads=2  -jar /home/szd/miniconda3/envs/sugarcane/bin/util/support_scripts/ExitTester.jar 0
+Wednesday, July 1, 2026: 09:12:38	CMD: java -Xmx4g -XX:ParallelGCThreads=2  -jar /home/szd/miniconda3/envs/sugarcane/bin/util/support_scripts/ExitTester.jar 1
+
+
+----------------------------------------------------------------------------------
+-------------- Trinity Phase 1: Clustering of RNA-Seq Reads  ---------------------
+----------------------------------------------------------------------------------
+
+---------------------------------------------------------------
+------------ In silico Read Normalization ---------------------
+-- (Removing Excess Reads Beyond 200 Coverage --
+---------------------------------------------------------------
+
+# running normalization on reads: $VAR1 = [
+          [
+            '/mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz'
+          ],
+          [
+            '/mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz'
+          ]
+        ];
+
+
+Wednesday, July 1, 2026: 09:12:38	CMD: /home/szd/miniconda3/envs/sugarcane/bin/util/insilico_read_normalization.pl --seqType fq --JM 18G  --max_cov 200 --min_cov 1 --CPU 6 --output /mnt/d/sugarcane_project/L3/trinity/trinity_out/insilico_read_normalization --max_CV 10000  --left /mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz --right /mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz --pairs_together  --PARALLEL_STATS  
+-prepping seqs
+Converting input files. (both directions in parallel); Left file exists, nothing to do; Right file exists, nothing to do; Done converting input files. -kmer counting.
+-generating stats files
+CMD: /home/szd/miniconda3/envs/sugarcane/bin/util/..//Inchworm/bin/fastaToKmerCoverageStats --reads left.fa --kmers jellyfish.K25.min2.kmers.fa --kmer_size 25  --num_threads 3  --DS  > left.fa.K25.stats
+CMD: /home/szd/miniconda3/envs/sugarcane/bin/util/..//Inchworm/bin/fastaToKmerCoverageStats --reads right.fa --kmers jellyfish.K25.min2.kmers.fa --kmer_size 25  --num_threads 3  --DS  > right.fa.K25.stats
+-reading Kmer occurrences...
+-reading Kmer occurrences...
+
+
+ done parsing  done parsing 820583081 Kmers, 820583081 Kmers, 820583081 added, taking 820583081 added, taking 281589 seconds.281589 seconds.
+
+nohup: ignoring input
+
+
+     ______  ____   ____  ____   ____  ______  __ __
+    |      ||    \ |    ||    \ |    ||      ||  |  |
+    |      ||  D  ) |  | |  _  | |  | |      ||  |  |
+    |_|  |_||    /  |  | |  |  | |  | |_|  |_||  ~  |
+      |  |  |    \  |  | |  |  | |  |   |  |  |___, |
+      |  |  |  .  \ |  | |  |  | |  |   |  |  |     |
+      |__|  |__|\_||____||__|__||____|  |__|  |____/
+
+    Trinity-v2.15.2
+
+
+
+Left read files: $VAR1 = [
+          '/mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz'
+        ];
+Right read files: $VAR1 = [
+          '/mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz',
+          '/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz'
+        ];
+Trinity version: Trinity-v2.15.2
+-ERROR: couldn't parse latest version tag info from github: {"message":"API rate limit exceeded for 223.123.43.86. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+
+Friday, July 17, 2026: 10:14:38	CMD: java -Xmx64m -XX:ParallelGCThreads=2  -jar /home/szd/miniconda3/envs/sugarcane/bin/util/support_scripts/ExitTester.jar 0
+Friday, July 17, 2026: 10:14:38	CMD: java -Xmx4g -XX:ParallelGCThreads=2  -jar /home/szd/miniconda3/envs/sugarcane/bin/util/support_scripts/ExitTester.jar 1
+
+
+----------------------------------------------------------------------------------
+-------------- Trinity Phase 1: Clustering of RNA-Seq Reads  ---------------------
+----------------------------------------------------------------------------------
+
+---------------------------------------------------------------
+------------ In silico Read Normalization ---------------------
+-- (Removing Excess Reads Beyond 200 Coverage --
+---------------------------------------------------------------
+
+# running normalization on reads: $VAR1 = [
+          [
+            '/mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz'
+          ],
+          [
+            '/mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz',
+            '/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz'
+          ]
+        ];
+
+
+Friday, July 17, 2026: 10:14:39	CMD: /home/szd/miniconda3/envs/sugarcane/bin/util/insilico_read_normalization.pl --seqType fq --JM 18G  --max_cov 200 --min_cov 1 --CPU 6 --output /mnt/d/sugarcane_project/L3/trinity/trinity_out/insilico_read_normalization --max_CV 10000  --left /mnt/e/sugarcane_clean_reads/1RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1ST_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2ST_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RT_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3SC_R1_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3ST_R1_clean.fq.gz --right /mnt/e/sugarcane_clean_reads/1RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/1ST_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/2ST_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3RT_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3SC_R2_clean.fq.gz,/mnt/e/sugarcane_clean_reads/3ST_R2_clean.fq.gz --pairs_together  --PARALLEL_STATS  
+-prepping seqs
+Converting input files. (both directions in parallel); Left file exists, nothing to do; Right file exists, nothing to do; Done converting input files. -kmer counting.
+-generating stats files
+CMD: /home/szd/miniconda3/envs/sugarcane/bin/util/..//Inchworm/bin/fastaToKmerCoverageStats --reads left.fa --kmers jellyfish.K25.min2.kmers.fa --kmer_size 25  --num_threads 3  --DS  > left.fa.K25.stats
+CMD: /home/szd/miniconda3/envs/sugarcane/bin/util/..//Inchworm/bin/fastaToKmerCoverageStats --reads right.fa --kmers jellyfish.K25.min2.kmers.fa --kmer_size 25  --num_threads 3  --DS  > right.fa.K25.stats
+-reading Kmer occurrences...
+-reading Kmer occurrences...

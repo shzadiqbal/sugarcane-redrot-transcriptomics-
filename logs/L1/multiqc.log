@@ -1,0 +1,9 @@
+
+/// MultiQC 🔍 v1.35
+
+       file_search | Search path: /mnt/d/sugarcane_project/L1/qc/fastp
+             fastp | Found 12 reports
+     write_results | Data        : L1/qc/multiqc/sugarcane_QC_report_data
+     write_results | Report      : L1/qc/multiqc/sugarcane_QC_report.html
+           multiqc | MultiQC complete
+MultiQC done at: Sat Jun 27 03:55:55 PM PKT 2026

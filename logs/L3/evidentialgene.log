@@ -1,0 +1,8 @@
+#ta2c: ERR:output skip dup id TR_TRINITY_DN307506_c0_g1_i1 
+#readPubidTab(publicset/all_transcripts_combined.pubids)= 796671
+# nin=7796490, nok=3704714, nfrag=19242, nskipnotloc=3346770, nskipdupfrag=361036, nskipdiffloc=364728
+#insertUniqExons= 30998
+#collectExonChains= 773218 of 780942 ids
+#assignChainLoci
+#n_class: ichain=379584 icalt=347212 icsub=46422 icdup=7724
+#n_alts : t1=379584 t2=67198 t3=36801 t4=27117 t5=22020 t6=18789 t7=16401 t8=14525 t9=12990 t10=11717 t11=10574 t12=9577 t13=8721 t14=7966 t15=7265 t16=6631 t17=6047 t18=5509 t19=4996 t20=4529

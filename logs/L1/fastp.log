@@ -1,0 +1,674 @@
+Processing 1RC at: Sat Jun 27 02:28:43 PM PKT 2026
+Detecting adapter sequence for read1...
+Processing 1RC at: Sat Jun 27 02:29:13 PM PKT 2026
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 28110718
+total bases: 2809933213
+Q20 bases: 2765302502(98.4117%)
+Q30 bases: 2670563638(95.0401%)
+Q40 bases: 2170395875(77.2401%)
+
+Read2 before filtering:
+total reads: 28110718
+total bases: 2809933213
+Q20 bases: 2725396150(96.9915%)
+Q30 bases: 2587073912(92.0689%)
+Q40 bases: 2008832828(71.4904%)
+
+Read1 after filtering:
+total reads: 28103510
+total bases: 2809647648
+Q20 bases: 2765587239(98.4318%)
+Q30 bases: 2670855669(95.0602%)
+Q40 bases: 2170535242(77.2529%)
+
+Read2 after filtering:
+total reads: 28103510
+total bases: 2809647648
+Q20 bases: 2726027673(97.0238%)
+Q30 bases: 2587713136(92.101%)
+Q40 bases: 2009246635(71.5124%)
+
+Filtering result:
+reads passed filter: 56207020
+reads failed due to low quality: 0
+reads failed due to too many N: 0
+reads failed due to too short: 14416
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+reads corrected by overlap analysis: 1084008
+bases corrected by overlap analysis: 1481173
+
+Duplication rate: 17.4798%
+
+Insert size peak (evaluated by paired-end reads): 156
+
+JSON report: /mnt/d/sugarcane_project/L1/qc/fastp/1RC_fastp.json
+HTML report: /mnt/d/sugarcane_project/L1/qc/fastp/1RC_fastp.html
+
+fastp --in1 /mnt/e/rnaseq/reads/1RC_R1.fq --in2 /mnt/e/rnaseq/reads/1RC_R2.fq --out1 /mnt/d/sugarcane_project/L1/qc/fastp/1RC_R1_clean.fq.gz --out2 /mnt/d/sugarcane_project/L1/qc/fastp/1RC_R2_clean.fq.gz --thread 6 --detect_adapter_for_pe --correction --qualified_quality_phred 20 --length_required 50 --json /mnt/d/sugarcane_project/L1/qc/fastp/1RC_fastp.json --html /mnt/d/sugarcane_project/L1/qc/fastp/1RC_fastp.html 
+fastp v1.1.0, time used: 349 seconds
+Done 1RC at: Sat Jun 27 02:35:02 PM PKT 2026
+Processing 1RT at: Sat Jun 27 02:35:02 PM PKT 2026
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 25850632
+total bases: 2583899636
+Q20 bases: 2541520502(98.3599%)
+Q30 bases: 2451439704(94.8736%)
+Q40 bases: 1981439410(76.6841%)
+
+Read2 before filtering:
+total reads: 25850632
+total bases: 2583899636
+Q20 bases: 2496928132(96.6341%)
+Q30 bases: 2356203066(91.1879%)
+Q40 bases: 1789864587(69.2699%)
+
+Read1 after filtering:
+total reads: 25843192
+total bases: 2583603877
+Q20 bases: 2541740171(98.3796%)
+Q30 bases: 2451666738(94.8933%)
+Q40 bases: 1981530219(76.6964%)
+
+Read2 after filtering:
+total reads: 25843192
+total bases: 2583603877
+Q20 bases: 2497499467(96.6673%)
+Q30 bases: 2356783622(91.2208%)
+Q40 bases: 1790235479(69.2922%)
+
+Filtering result:
+reads passed filter: 51686384
+reads failed due to low quality: 0
+reads failed due to too many N: 0
+reads failed due to too short: 14880
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+reads corrected by overlap analysis: 994274
+bases corrected by overlap analysis: 1375869
+
+Duplication rate: 13.2568%
+
+Insert size peak (evaluated by paired-end reads): 155
+
+JSON report: /mnt/d/sugarcane_project/L1/qc/fastp/1RT_fastp.json
+HTML report: /mnt/d/sugarcane_project/L1/qc/fastp/1RT_fastp.html
+
+fastp --in1 /mnt/e/rnaseq/reads/1RT_R1.fq --in2 /mnt/e/rnaseq/reads/1RT_R2.fq --out1 /mnt/d/sugarcane_project/L1/qc/fastp/1RT_R1_clean.fq.gz --out2 /mnt/d/sugarcane_project/L1/qc/fastp/1RT_R2_clean.fq.gz --thread 6 --detect_adapter_for_pe --correction --qualified_quality_phred 20 --length_required 50 --json /mnt/d/sugarcane_project/L1/qc/fastp/1RT_fastp.json --html /mnt/d/sugarcane_project/L1/qc/fastp/1RT_fastp.html 
+fastp v1.1.0, time used: 296 seconds
+Done 1RT at: Sat Jun 27 02:39:58 PM PKT 2026
+Processing 1SC at: Sat Jun 27 02:39:58 PM PKT 2026
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 64863545
+total bases: 6484310487
+Q20 bases: 6404867106(98.7748%)
+Q30 bases: 6232014870(96.1091%)
+Q40 bases: 5185233602(79.9658%)
+
+Read2 before filtering:
+total reads: 64863545
+total bases: 6484310487
+Q20 bases: 6272768122(96.7376%)
+Q30 bases: 5934142229(91.5154%)
+Q40 bases: 4539261376(70.0038%)
+
+Read1 after filtering:
+total reads: 64851136
+total bases: 6483815147
+Q20 bases: 6405125741(98.7864%)
+Q30 bases: 6232282832(96.1206%)
+Q40 bases: 5185326919(79.9734%)
+
+Read2 after filtering:
+total reads: 64851136
+total bases: 6483815147
+Q20 bases: 6274043627(96.7647%)
+Q30 bases: 5935428475(91.5422%)
+Q40 bases: 4540180309(70.0233%)
+
+Filtering result:
+reads passed filter: 129702272
+reads failed due to low quality: 0
+reads failed due to too many N: 0
+reads failed due to too short: 24818
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+reads corrected by overlap analysis: 1651000
+bases corrected by overlap analysis: 2516746
+
+Duplication rate: 26.7003%
+
+Insert size peak (evaluated by paired-end reads): 161
+
+JSON report: /mnt/d/sugarcane_project/L1/qc/fastp/1SC_fastp.json
+HTML report: /mnt/d/sugarcane_project/L1/qc/fastp/1SC_fastp.html
+
+fastp --in1 /mnt/e/rnaseq/reads/1SC_R1.fq --in2 /mnt/e/rnaseq/reads/1SC_R2.fq --out1 /mnt/d/sugarcane_project/L1/qc/fastp/1SC_R1_clean.fq.gz --out2 /mnt/d/sugarcane_project/L1/qc/fastp/1SC_R2_clean.fq.gz --thread 6 --detect_adapter_for_pe --correction --qualified_quality_phred 20 --length_required 50 --json /mnt/d/sugarcane_project/L1/qc/fastp/1SC_fastp.json --html /mnt/d/sugarcane_project/L1/qc/fastp/1SC_fastp.html 
+fastp v1.1.0, time used: 838 seconds
+Done 1SC at: Sat Jun 27 02:53:56 PM PKT 2026
+Processing 1ST at: Sat Jun 27 02:53:56 PM PKT 2026
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 28049001
+total bases: 2803574527
+Q20 bases: 2760174800(98.452%)
+Q30 bases: 2667063344(95.1308%)
+Q40 bases: 2170551479(77.4209%)
+
+Read2 before filtering:
+total reads: 28049001
+total bases: 2803574527
+Q20 bases: 2723247401(97.1348%)
+Q30 bases: 2589020634(92.3471%)
+Q40 bases: 2004675594(71.5043%)
+
+Read1 after filtering:
+total reads: 28042164
+total bases: 2803302797
+Q20 bases: 2760540388(98.4746%)
+Q30 bases: 2667436164(95.1533%)
+Q40 bases: 2170743823(77.4352%)
+
+Read2 after filtering:
+total reads: 28042164
+total bases: 2803302797
+Q20 bases: 2723981701(97.1704%)
+Q30 bases: 2589762327(92.3825%)
+Q40 bases: 2005176489(71.5291%)
+
+Filtering result:
+reads passed filter: 56084328
+reads failed due to low quality: 0
+reads failed due to too many N: 0
+reads failed due to too short: 13674
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+reads corrected by overlap analysis: 1197111
+bases corrected by overlap analysis: 1637343
+
+Duplication rate: 14.707%
+
+Insert size peak (evaluated by paired-end reads): 146
+
+JSON report: /mnt/d/sugarcane_project/L1/qc/fastp/1ST_fastp.json
+HTML report: /mnt/d/sugarcane_project/L1/qc/fastp/1ST_fastp.html
+
+fastp --in1 /mnt/e/rnaseq/reads/1ST_R1.fq --in2 /mnt/e/rnaseq/reads/1ST_R2.fq --out1 /mnt/d/sugarcane_project/L1/qc/fastp/1ST_R1_clean.fq.gz --out2 /mnt/d/sugarcane_project/L1/qc/fastp/1ST_R2_clean.fq.gz --thread 6 --detect_adapter_for_pe --correction --qualified_quality_phred 20 --length_required 50 --json /mnt/d/sugarcane_project/L1/qc/fastp/1ST_fastp.json --html /mnt/d/sugarcane_project/L1/qc/fastp/1ST_fastp.html 
+fastp v1.1.0, time used: 299 seconds
+Done 1ST at: Sat Jun 27 02:58:55 PM PKT 2026
+Processing 2RC at: Sat Jun 27 02:58:55 PM PKT 2026
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 30460261
+total bases: 3044813972
+Q20 bases: 2996515979(98.4138%)
+Q30 bases: 2892778896(95.0068%)
+Q40 bases: 2342129765(76.9219%)
+
+Read2 before filtering:
+total reads: 30460261
+total bases: 3044813972
+Q20 bases: 2924196677(96.0386%)
+Q30 bases: 2737469790(89.906%)
+Q40 bases: 2032455892(66.7514%)
+
+Read1 after filtering:
+total reads: 30451543
+total bases: 3044468162
+Q20 bases: 2996704500(98.4311%)
+Q30 bases: 2892975018(95.024%)
+Q40 bases: 2342182746(76.9324%)
+
+Read2 after filtering:
+total reads: 30451543
+total bases: 3044468162
+Q20 bases: 2925083930(96.0787%)
+Q30 bases: 2738369203(89.9457%)
+Q40 bases: 2032992967(66.7766%)
+
+Filtering result:
+reads passed filter: 60903086
+reads failed due to low quality: 0
+reads failed due to too many N: 0
+reads failed due to too short: 17436
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+reads corrected by overlap analysis: 1284616
+bases corrected by overlap analysis: 1759101
+
+Duplication rate: 14.6512%
+
+Insert size peak (evaluated by paired-end reads): 157
+
+JSON report: /mnt/d/sugarcane_project/L1/qc/fastp/2RC_fastp.json
+HTML report: /mnt/d/sugarcane_project/L1/qc/fastp/2RC_fastp.html
+
+fastp --in1 /mnt/e/rnaseq/reads/2RC_R1.fq --in2 /mnt/e/rnaseq/reads/2RC_R2.fq --out1 /mnt/d/sugarcane_project/L1/qc/fastp/2RC_R1_clean.fq.gz --out2 /mnt/d/sugarcane_project/L1/qc/fastp/2RC_R2_clean.fq.gz --thread 6 --detect_adapter_for_pe --correction --qualified_quality_phred 20 --length_required 50 --json /mnt/d/sugarcane_project/L1/qc/fastp/2RC_fastp.json --html /mnt/d/sugarcane_project/L1/qc/fastp/2RC_fastp.html 
+fastp v1.1.0, time used: 459 seconds
+Done 2RC at: Sat Jun 27 03:06:34 PM PKT 2026
+Processing 2RT at: Sat Jun 27 03:06:34 PM PKT 2026
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 27989293
+total bases: 2797472611
+Q20 bases: 2754161826(98.4518%)
+Q30 bases: 2661044256(95.1232%)
+Q40 bases: 2167441151(77.4785%)
+
+Read2 before filtering:
+total reads: 27989293
+total bases: 2797472611
+Q20 bases: 2719661621(97.2185%)
+Q30 bases: 2587618629(92.4984%)
+Q40 bases: 2007885365(71.775%)
+
+Read1 after filtering:
+total reads: 27982061
+total bases: 2797185110
+Q20 bases: 2754533540(98.4752%)
+Q30 bases: 2661423219(95.1465%)
+Q40 bases: 2167637891(77.4935%)
+
+Read2 after filtering:
+total reads: 27982061
+total bases: 2797185110
+Q20 bases: 2720351331(97.2532%)
+Q30 bases: 2588316459(92.5329%)
+Q40 bases: 2008356725(71.7992%)
+
+Filtering result:
+reads passed filter: 55964122
+reads failed due to low quality: 0
+reads failed due to too many N: 0
+reads failed due to too short: 14464
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+reads corrected by overlap analysis: 1195415
+bases corrected by overlap analysis: 1630248
+
+Duplication rate: 15.5894%
+
+Insert size peak (evaluated by paired-end reads): 146
+
+JSON report: /mnt/d/sugarcane_project/L1/qc/fastp/2RT_fastp.json
+HTML report: /mnt/d/sugarcane_project/L1/qc/fastp/2RT_fastp.html
+
+fastp --in1 /mnt/e/rnaseq/reads/2RT_R1.fq --in2 /mnt/e/rnaseq/reads/2RT_R2.fq --out1 /mnt/d/sugarcane_project/L1/qc/fastp/2RT_R1_clean.fq.gz --out2 /mnt/d/sugarcane_project/L1/qc/fastp/2RT_R2_clean.fq.gz --thread 6 --detect_adapter_for_pe --correction --qualified_quality_phred 20 --length_required 50 --json /mnt/d/sugarcane_project/L1/qc/fastp/2RT_fastp.json --html /mnt/d/sugarcane_project/L1/qc/fastp/2RT_fastp.html 
+fastp v1.1.0, time used: 353 seconds
+Done 2RT at: Sat Jun 27 03:12:27 PM PKT 2026
+Processing 2SC at: Sat Jun 27 03:12:27 PM PKT 2026
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 29245894
+total bases: 2922879177
+Q20 bases: 2875245346(98.3703%)
+Q30 bases: 2774427784(94.9211%)
+Q40 bases: 2246473808(76.8583%)
+
+Read2 before filtering:
+total reads: 29245894
+total bases: 2922879177
+Q20 bases: 2834199063(96.966%)
+Q30 bases: 2687924744(91.9615%)
+Q40 bases: 2062915993(70.5782%)
+
+Read1 after filtering:
+total reads: 29233683
+total bases: 2922394636
+Q20 bases: 2875365798(98.3907%)
+Q30 bases: 2774559861(94.9413%)
+Q40 bases: 2246478598(76.8712%)
+
+Read2 after filtering:
+total reads: 29233683
+total bases: 2922394636
+Q20 bases: 2834615342(96.9963%)
+Q30 bases: 2688353154(91.9914%)
+Q40 bases: 2063163234(70.5984%)
+
+Filtering result:
+reads passed filter: 58467366
+reads failed due to low quality: 0
+reads failed due to too many N: 0
+reads failed due to too short: 24422
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+reads corrected by overlap analysis: 1109395
+bases corrected by overlap analysis: 1496405
+
+Duplication rate: 14.5697%
+
+Insert size peak (evaluated by paired-end reads): 147
+
+JSON report: /mnt/d/sugarcane_project/L1/qc/fastp/2SC_fastp.json
+HTML report: /mnt/d/sugarcane_project/L1/qc/fastp/2SC_fastp.html
+
+fastp --in1 /mnt/e/rnaseq/reads/2SC_R1.fq --in2 /mnt/e/rnaseq/reads/2SC_R2.fq --out1 /mnt/d/sugarcane_project/L1/qc/fastp/2SC_R1_clean.fq.gz --out2 /mnt/d/sugarcane_project/L1/qc/fastp/2SC_R2_clean.fq.gz --thread 6 --detect_adapter_for_pe --correction --qualified_quality_phred 20 --length_required 50 --json /mnt/d/sugarcane_project/L1/qc/fastp/2SC_fastp.json --html /mnt/d/sugarcane_project/L1/qc/fastp/2SC_fastp.html 
+fastp v1.1.0, time used: 486 seconds
+Done 2SC at: Sat Jun 27 03:20:33 PM PKT 2026
+Processing 2ST at: Sat Jun 27 03:20:33 PM PKT 2026
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 24817043
+total bases: 2480658644
+Q20 bases: 2440493377(98.3809%)
+Q30 bases: 2355672326(94.9616%)
+Q40 bases: 1909621971(76.9804%)
+
+Read2 before filtering:
+total reads: 24817043
+total bases: 2480658644
+Q20 bases: 2399822280(96.7413%)
+Q30 bases: 2269981629(91.5072%)
+Q40 bases: 1741398771(70.199%)
+
+Read1 after filtering:
+total reads: 24809450
+total bases: 2480358233
+Q20 bases: 2440657850(98.3994%)
+Q30 bases: 2355844667(94.98%)
+Q40 bases: 1909681261(76.9922%)
+
+Read2 after filtering:
+total reads: 24809450
+total bases: 2480358233
+Q20 bases: 2400277356(96.7714%)
+Q30 bases: 2270445232(91.537%)
+Q40 bases: 1741689476(70.2193%)
+
+Filtering result:
+reads passed filter: 49618900
+reads failed due to low quality: 0
+reads failed due to too many N: 0
+reads failed due to too short: 15186
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+reads corrected by overlap analysis: 876191
+bases corrected by overlap analysis: 1213635
+
+Duplication rate: 14.2089%
+
+Insert size peak (evaluated by paired-end reads): 156
+
+JSON report: /mnt/d/sugarcane_project/L1/qc/fastp/2ST_fastp.json
+HTML report: /mnt/d/sugarcane_project/L1/qc/fastp/2ST_fastp.html
+
+fastp --in1 /mnt/e/rnaseq/reads/2ST_R1.fq --in2 /mnt/e/rnaseq/reads/2ST_R2.fq --out1 /mnt/d/sugarcane_project/L1/qc/fastp/2ST_R1_clean.fq.gz --out2 /mnt/d/sugarcane_project/L1/qc/fastp/2ST_R2_clean.fq.gz --thread 6 --detect_adapter_for_pe --correction --qualified_quality_phred 20 --length_required 50 --json /mnt/d/sugarcane_project/L1/qc/fastp/2ST_fastp.json --html /mnt/d/sugarcane_project/L1/qc/fastp/2ST_fastp.html 
+fastp v1.1.0, time used: 396 seconds
+Done 2ST at: Sat Jun 27 03:27:09 PM PKT 2026
+Processing 3RC at: Sat Jun 27 03:27:09 PM PKT 2026
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 29469574
+total bases: 2945580707
+Q20 bases: 2897843755(98.3794%)
+Q30 bases: 2796796168(94.9489%)
+Q40 bases: 2269271616(77.0399%)
+
+Read2 before filtering:
+total reads: 29469574
+total bases: 2945580707
+Q20 bases: 2861441227(97.1435%)
+Q30 bases: 2721677968(92.3987%)
+Q40 bases: 2123984742(72.1075%)
+
+Read1 after filtering:
+total reads: 29461583
+total bases: 2945263866
+Q20 bases: 2898161347(98.4007%)
+Q30 bases: 2797122034(94.9702%)
+Q40 bases: 2269431424(77.0536%)
+
+Read2 after filtering:
+total reads: 29461583
+total bases: 2945263866
+Q20 bases: 2862019751(97.1736%)
+Q30 bases: 2722264616(92.4285%)
+Q40 bases: 2124365014(72.1282%)
+
+Filtering result:
+reads passed filter: 58923166
+reads failed due to low quality: 0
+reads failed due to too many N: 0
+reads failed due to too short: 15982
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+reads corrected by overlap analysis: 1116469
+bases corrected by overlap analysis: 1523195
+
+Duplication rate: 14.5465%
+
+Insert size peak (evaluated by paired-end reads): 146
+
+JSON report: /mnt/d/sugarcane_project/L1/qc/fastp/3RC_fastp.json
+HTML report: /mnt/d/sugarcane_project/L1/qc/fastp/3RC_fastp.html
+
+fastp --in1 /mnt/e/rnaseq/reads/3RC_R1.fq --in2 /mnt/e/rnaseq/reads/3RC_R2.fq --out1 /mnt/d/sugarcane_project/L1/qc/fastp/3RC_R1_clean.fq.gz --out2 /mnt/d/sugarcane_project/L1/qc/fastp/3RC_R2_clean.fq.gz --thread 6 --detect_adapter_for_pe --correction --qualified_quality_phred 20 --length_required 50 --json /mnt/d/sugarcane_project/L1/qc/fastp/3RC_fastp.json --html /mnt/d/sugarcane_project/L1/qc/fastp/3RC_fastp.html 
+fastp v1.1.0, time used: 429 seconds
+Done 3RC at: Sat Jun 27 03:34:18 PM PKT 2026
+Processing 3RT at: Sat Jun 27 03:34:18 PM PKT 2026
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 23810180
+total bases: 2379821045
+Q20 bases: 2319470142(97.4641%)
+Q30 bases: 2196922545(92.3146%)
+Q40 bases: 1656585284(69.6097%)
+
+Read2 before filtering:
+total reads: 23810180
+total bases: 2379821045
+Q20 bases: 2299888442(96.6412%)
+Q30 bases: 2169592649(91.1662%)
+Q40 bases: 1643320976(69.0523%)
+
+Read1 after filtering:
+total reads: 23803277
+total bases: 2379548129
+Q20 bases: 2319952363(97.4955%)
+Q30 bases: 2197412017(92.3458%)
+Q40 bases: 1656823736(69.6277%)
+
+Read2 after filtering:
+total reads: 23803277
+total bases: 2379548129
+Q20 bases: 2300516861(96.6787%)
+Q30 bases: 2170230233(91.2035%)
+Q40 bases: 1643680962(69.0753%)
+
+Filtering result:
+reads passed filter: 47606554
+reads failed due to low quality: 0
+reads failed due to too many N: 0
+reads failed due to too short: 13806
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+reads corrected by overlap analysis: 1214562
+bases corrected by overlap analysis: 1649545
+
+Duplication rate: 15.2328%
+
+Insert size peak (evaluated by paired-end reads): 146
+
+JSON report: /mnt/d/sugarcane_project/L1/qc/fastp/3RT_fastp.json
+HTML report: /mnt/d/sugarcane_project/L1/qc/fastp/3RT_fastp.html
+
+fastp --in1 /mnt/e/rnaseq/reads/3RT_R1.fq --in2 /mnt/e/rnaseq/reads/3RT_R2.fq --out1 /mnt/d/sugarcane_project/L1/qc/fastp/3RT_R1_clean.fq.gz --out2 /mnt/d/sugarcane_project/L1/qc/fastp/3RT_R2_clean.fq.gz --thread 6 --detect_adapter_for_pe --correction --qualified_quality_phred 20 --length_required 50 --json /mnt/d/sugarcane_project/L1/qc/fastp/3RT_fastp.json --html /mnt/d/sugarcane_project/L1/qc/fastp/3RT_fastp.html 
+fastp v1.1.0, time used: 317 seconds
+Done 3RT at: Sat Jun 27 03:39:35 PM PKT 2026
+Processing 3SC at: Sat Jun 27 03:39:35 PM PKT 2026
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 37016120
+total bases: 3699905391
+Q20 bases: 3641964002(98.434%)
+Q30 bases: 3517249648(95.0632%)
+Q40 bases: 2856429548(77.2028%)
+
+Read2 before filtering:
+total reads: 37016120
+total bases: 3699905391
+Q20 bases: 3582071831(96.8152%)
+Q30 bases: 3389344370(91.6062%)
+Q40 bases: 2605910497(70.4318%)
+
+Read1 after filtering:
+total reads: 37005061
+total bases: 3699467348
+Q20 bases: 3642233032(98.4529%)
+Q30 bases: 3517528921(95.082%)
+Q40 bases: 2856530842(77.2147%)
+
+Read2 after filtering:
+total reads: 37005061
+total bases: 3699467348
+Q20 bases: 3582884932(96.8487%)
+Q30 bases: 3390170826(91.6394%)
+Q40 bases: 2606416835(70.4538%)
+
+Filtering result:
+reads passed filter: 74010122
+reads failed due to low quality: 0
+reads failed due to too many N: 0
+reads failed due to too short: 22118
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+reads corrected by overlap analysis: 1442279
+bases corrected by overlap analysis: 1948464
+
+Duplication rate: 14.8485%
+
+Insert size peak (evaluated by paired-end reads): 146
+
+JSON report: /mnt/d/sugarcane_project/L1/qc/fastp/3SC_fastp.json
+HTML report: /mnt/d/sugarcane_project/L1/qc/fastp/3SC_fastp.html
+
+fastp --in1 /mnt/e/rnaseq/reads/3SC_R1.fq --in2 /mnt/e/rnaseq/reads/3SC_R2.fq --out1 /mnt/d/sugarcane_project/L1/qc/fastp/3SC_R1_clean.fq.gz --out2 /mnt/d/sugarcane_project/L1/qc/fastp/3SC_R2_clean.fq.gz --thread 6 --detect_adapter_for_pe --correction --qualified_quality_phred 20 --length_required 50 --json /mnt/d/sugarcane_project/L1/qc/fastp/3SC_fastp.json --html /mnt/d/sugarcane_project/L1/qc/fastp/3SC_fastp.html 
+fastp v1.1.0, time used: 473 seconds
+Done 3SC at: Sat Jun 27 03:47:28 PM PKT 2026
+Processing 3ST at: Sat Jun 27 03:47:28 PM PKT 2026
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 25171087
+total bases: 2516061264
+Q20 bases: 2473945688(98.3261%)
+Q30 bases: 2385558577(94.8132%)
+Q40 bases: 1928987300(76.6669%)
+
+Read2 before filtering:
+total reads: 25171087
+total bases: 2516061264
+Q20 bases: 2439184403(96.9446%)
+Q30 bases: 2313624422(91.9542%)
+Q40 bases: 1781534285(70.8065%)
+
+Read1 after filtering:
+total reads: 25165553
+total bases: 2515841334
+Q20 bases: 2474322548(98.3497%)
+Q30 bases: 2385941273(94.8367%)
+Q40 bases: 1929183959(76.6815%)
+
+Read2 after filtering:
+total reads: 25165553
+total bases: 2515841334
+Q20 bases: 2439922054(96.9824%)
+Q30 bases: 2314368319(91.9918%)
+Q40 bases: 1782015579(70.8318%)
+
+Filtering result:
+reads passed filter: 50331106
+reads failed due to low quality: 0
+reads failed due to too many N: 0
+reads failed due to too short: 11068
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+reads corrected by overlap analysis: 1133831
+bases corrected by overlap analysis: 1549420
+
+Duplication rate: 21.9659%
+
+Insert size peak (evaluated by paired-end reads): 146
+
+JSON report: /mnt/d/sugarcane_project/L1/qc/fastp/3ST_fastp.json
+HTML report: /mnt/d/sugarcane_project/L1/qc/fastp/3ST_fastp.html
+
+fastp --in1 /mnt/e/rnaseq/reads/3ST_R1.fq --in2 /mnt/e/rnaseq/reads/3ST_R2.fq --out1 /mnt/d/sugarcane_project/L1/qc/fastp/3ST_R1_clean.fq.gz --out2 /mnt/d/sugarcane_project/L1/qc/fastp/3ST_R2_clean.fq.gz --thread 6 --detect_adapter_for_pe --correction --qualified_quality_phred 20 --length_required 50 --json /mnt/d/sugarcane_project/L1/qc/fastp/3ST_fastp.json --html /mnt/d/sugarcane_project/L1/qc/fastp/3ST_fastp.html 
+fastp v1.1.0, time used: 356 seconds
+Done 3ST at: Sat Jun 27 03:53:24 PM PKT 2026

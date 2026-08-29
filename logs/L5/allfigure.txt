@@ -1,0 +1,126 @@
+Warning messages:
+1: package ‘S4Vectors’ was built under R version 4.3.3 
+2: package ‘BiocGenerics’ was built under R version 4.3.2 
+3: package ‘IRanges’ was built under R version 4.3.3 
+4: package ‘GenomicRanges’ was built under R version 4.3.3 
+5: package ‘SummarizedExperiment’ was built under R version 4.3.2 
+6: package ‘MatrixGenerics’ was built under R version 4.3.3 
+7: package ‘matrixStats’ was built under R version 4.3.3 
+8: package ‘Biobase’ was built under R version 4.3.3 
+9: package ‘pheatmap’ was built under R version 4.3.3 
+10: package ‘RColorBrewer’ was built under R version 4.3.3 
+Loading DESeq2 objects...
+Samples loaded: 12 
+Transcripts: 137280 
+
+Generating Figure 1: PCA...
+using ntop=500 top features by variance
+Warning messages:
+1: The following aesthetics were dropped during statistical transformation: shape
+and label.
+ℹ This can happen when ggplot fails to infer the correct grouping structure in
+  the data.
+ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+  variable into a factor? 
+2: In grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
+  conversion failure on 'Variance-stabilised counts (VST) — 12 samples' in 'mbcsToSbcs': dot substituted for <e2>
+3: In grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
+  conversion failure on 'Variance-stabilised counts (VST) — 12 samples' in 'mbcsToSbcs': dot substituted for <80>
+4: In grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
+  conversion failure on 'Variance-stabilised counts (VST) — 12 samples' in 'mbcsToSbcs': dot substituted for <94>
+5: In grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
+  conversion failure on 'Variance-stabilised counts (VST) — 12 samples' in 'mbcsToSbcs': dot substituted for <e2>
+6: In grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
+  conversion failure on 'Variance-stabilised counts (VST) — 12 samples' in 'mbcsToSbcs': dot substituted for <80>
+7: In grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
+  conversion failure on 'Variance-stabilised counts (VST) — 12 samples' in 'mbcsToSbcs': dot substituted for <94>
+8: In grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
+  conversion failure on 'Variance-stabilised counts (VST) — 12 samples' in 'mbcsToSbcs': dot substituted for <e2>
+9: In grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
+  conversion failure on 'Variance-stabilised counts (VST) — 12 samples' in 'mbcsToSbcs': dot substituted for <80>
+10: In grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
+  conversion failure on 'Variance-stabilised counts (VST) — 12 samples' in 'mbcsToSbcs': dot substituted for <94>
+Warning message:
+The following aesthetics were dropped during statistical transformation: shape
+and label.
+ℹ This can happen when ggplot fails to infer the correct grouping structure in
+  the data.
+ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+  variable into a factor? 
+  PC1: 59.9%  PC2: 19.3%
+Generating Figure 2: Sample distance heatmap...
+null device 
+          1 
+null device 
+          1 
+  Sample distance heatmap saved
+Generating Figure 3: Volcano plots (all 5 contrasts)...
+Warning message:
+Using ragg device as default. Ignoring `type` and `antialias` arguments 
+Warning message:
+Using ragg device as default. Ignoring `type` and `antialias` arguments 
+Warning message:
+Using ragg device as default. Ignoring `type` and `antialias` arguments 
+Warning message:
+Using ragg device as default. Ignoring `type` and `antialias` arguments 
+Warning message:
+Using ragg device as default. Ignoring `type` and `antialias` arguments 
+  All 5 volcano plots saved
+Generating Figure 4: Interaction heatmap...
+null device 
+          1 
+null device 
+          1 
+  Interaction heatmap saved
+Generating Figure 5: DE summary bar chart...
+There were 18 warnings (use warnings() to see them)
+Warning message:
+Using ragg device as default. Ignoring `type` and `antialias` arguments 
+  DE summary bar chart saved
+Generating Figure 6: Top 50 RC vs RT heatmap...
+  RC vs RT heatmap saved
+
+=== ALL FIGURES GENERATED ===
+Total files in plots directory: 31
+  Fig1_PCA.pdf 
+  Fig1_PCA.png 
+  Fig2_Sample_distance_heatmap.pdf 
+  Fig2_Sample_distance_heatmap.png 
+  Fig3A_Volcano_RC_vs_RT.pdf 
+  Fig3A_Volcano_RC_vs_RT.png 
+  Fig3B_Volcano_SC_vs_ST.pdf 
+  Fig3B_Volcano_SC_vs_ST.png 
+  Fig3C_Volcano_RC_vs_SC.pdf 
+  Fig3C_Volcano_RC_vs_SC.png 
+  Fig3D_Volcano_RT_vs_ST.pdf 
+  Fig3D_Volcano_RT_vs_ST.png 
+  Fig3E_Volcano_interaction.pdf 
+  Fig3E_Volcano_interaction.png 
+  Fig4_Heatmap_interaction_71.pdf 
+  Fig4_Heatmap_interaction_71.png 
+  Fig5_DE_summary_barchart.pdf 
+  Fig5_DE_summary_barchart.png 
+  Fig6_Heatmap_top50_RCvsRT.pdf 
+  Fig6_Heatmap_top50_RCvsRT.png 
+  Heatmap_top50_interaction_corrected.pdf 
+  Volcano_interaction.pdf 
+  Volcano_interaction.png 
+  Volcano_RC_vs_RT.pdf 
+  Volcano_RC_vs_RT.png 
+  Volcano_RC_vs_SC.pdf 
+  Volcano_RC_vs_SC.png 
+  Volcano_RT_vs_ST.pdf 
+  Volcano_RT_vs_ST.png 
+  Volcano_SC_vs_ST.pdf 
+  Volcano_SC_vs_ST.png 
+
+=== FIGURES FOR MANUSCRIPT ===
+Figure 1: PCA — Fig1_PCA.png
+Figure 2: Sample distances — Fig2_Sample_distance_heatmap.png
+Figure 3A-E: Volcano plots — Fig3*_Volcano_*.png
+Figure 4: Interaction heatmap — Fig4_Heatmap_interaction_71.png
+Figure 5: DE bar chart — Fig5_DE_summary_barchart.png
+Figure 6: Top50 RC vs RT — Fig6_Heatmap_top50_RCvsRT.png
+
+All figures also available as PDF for vector editing
+Next step: Run WGCNA script

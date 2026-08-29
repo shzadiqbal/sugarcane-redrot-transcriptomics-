@@ -1,0 +1,156 @@
+Aligning 1RC started: Sat Jun 27 04:01:05 PM PKT 2026
+HISAT2 summary stats:
+	Total pairs: 28103510
+		Aligned concordantly or discordantly 0 time: 6827277 (24.29%)
+		Aligned concordantly 1 time: 9384851 (33.39%)
+		Aligned concordantly >1 times: 11635265 (41.40%)
+		Aligned discordantly 1 time: 256117 (0.91%)
+	Total unpaired reads: 13654554
+		Aligned 0 time: 7625213 (55.84%)
+		Aligned 1 time: 2515471 (18.42%)
+		Aligned >1 times: 3513870 (25.73%)
+	Overall alignment rate: 86.43%
+Aligning 1RC done: Sat Jun 27 04:56:09 PM PKT 2026
+Aligning 1RT started: Sat Jun 27 04:56:09 PM PKT 2026
+HISAT2 summary stats:
+	Total pairs: 25843192
+		Aligned concordantly or discordantly 0 time: 6454372 (24.98%)
+		Aligned concordantly 1 time: 8660234 (33.51%)
+		Aligned concordantly >1 times: 10503761 (40.64%)
+		Aligned discordantly 1 time: 224825 (0.87%)
+	Total unpaired reads: 12908744
+		Aligned 0 time: 7327796 (56.77%)
+		Aligned 1 time: 2315698 (17.94%)
+		Aligned >1 times: 3265250 (25.29%)
+	Overall alignment rate: 85.82%
+Aligning 1RT done: Sat Jun 27 05:45:06 PM PKT 2026
+Aligning 1SC started: Sat Jun 27 05:45:06 PM PKT 2026
+HISAT2 summary stats:
+	Total pairs: 64851136
+		Aligned concordantly or discordantly 0 time: 20258860 (31.24%)
+		Aligned concordantly 1 time: 19151535 (29.53%)
+		Aligned concordantly >1 times: 24915602 (38.42%)
+		Aligned discordantly 1 time: 525139 (0.81%)
+	Total unpaired reads: 40517720
+		Aligned 0 time: 26777882 (66.09%)
+		Aligned 1 time: 5387336 (13.30%)
+		Aligned >1 times: 8352502 (20.61%)
+	Overall alignment rate: 79.35%
+Aligning 1SC done: Sat Jun 27 07:37:35 PM PKT 2026
+Aligning 1ST started: Sat Jun 27 07:37:35 PM PKT 2026
+HISAT2 summary stats:
+	Total pairs: 28042164
+		Aligned concordantly or discordantly 0 time: 9135215 (32.58%)
+		Aligned concordantly 1 time: 8208804 (29.27%)
+		Aligned concordantly >1 times: 10499392 (37.44%)
+		Aligned discordantly 1 time: 198753 (0.71%)
+	Total unpaired reads: 18270430
+		Aligned 0 time: 13201862 (72.26%)
+		Aligned 1 time: 2070905 (11.33%)
+		Aligned >1 times: 2997663 (16.41%)
+	Overall alignment rate: 76.46%
+Aligning 1ST done: Sat Jun 27 08:22:49 PM PKT 2026
+Aligning 2RC started: Sat Jun 27 08:22:49 PM PKT 2026
+HISAT2 summary stats:
+	Total pairs: 30451543
+		Aligned concordantly or discordantly 0 time: 8358500 (27.45%)
+		Aligned concordantly 1 time: 10046236 (32.99%)
+		Aligned concordantly >1 times: 11763772 (38.63%)
+		Aligned discordantly 1 time: 283035 (0.93%)
+	Total unpaired reads: 16717000
+		Aligned 0 time: 10050270 (60.12%)
+		Aligned 1 time: 2807417 (16.79%)
+		Aligned >1 times: 3859313 (23.09%)
+	Overall alignment rate: 83.50%
+Aligning 2RC done: Sat Jun 27 09:18:54 PM PKT 2026
+Aligning 2RT started: Sat Jun 27 09:18:54 PM PKT 2026
+HISAT2 summary stats:
+	Total pairs: 27982061
+		Aligned concordantly or discordantly 0 time: 6503113 (23.24%)
+		Aligned concordantly 1 time: 9470909 (33.85%)
+		Aligned concordantly >1 times: 11785362 (42.12%)
+		Aligned discordantly 1 time: 222677 (0.80%)
+	Total unpaired reads: 13006226
+		Aligned 0 time: 7357115 (56.57%)
+		Aligned 1 time: 2340789 (18.00%)
+		Aligned >1 times: 3308322 (25.44%)
+	Overall alignment rate: 86.85%
+Aligning 2RT done: Sat Jun 27 10:13:57 PM PKT 2026
+Aligning 2SC started: Sat Jun 27 10:13:57 PM PKT 2026
+HISAT2 summary stats:
+	Total pairs: 29233683
+		Aligned concordantly or discordantly 0 time: 10032700 (34.32%)
+		Aligned concordantly 1 time: 8068732 (27.60%)
+		Aligned concordantly >1 times: 10973010 (37.54%)
+		Aligned discordantly 1 time: 159241 (0.54%)
+	Total unpaired reads: 20065400
+		Aligned 0 time: 14977182 (74.64%)
+		Aligned 1 time: 1943620 (9.69%)
+		Aligned >1 times: 3144598 (15.67%)
+	Overall alignment rate: 74.38%
+Aligning 2SC done: Sat Jun 27 11:02:17 PM PKT 2026
+Aligning 2ST started: Sat Jun 27 11:02:17 PM PKT 2026
+HISAT2 summary stats:
+	Total pairs: 24809450
+		Aligned concordantly or discordantly 0 time: 6999336 (28.21%)
+		Aligned concordantly 1 time: 7920773 (31.93%)
+		Aligned concordantly >1 times: 9664194 (38.95%)
+		Aligned discordantly 1 time: 225147 (0.91%)
+	Total unpaired reads: 13998672
+		Aligned 0 time: 8481160 (60.59%)
+		Aligned 1 time: 2240935 (16.01%)
+		Aligned >1 times: 3276577 (23.41%)
+	Overall alignment rate: 82.91%
+Aligning 2ST done: Sat Jun 27 11:47:17 PM PKT 2026
+Aligning 3RC started: Sat Jun 27 11:47:17 PM PKT 2026
+HISAT2 summary stats:
+	Total pairs: 29461583
+		Aligned concordantly or discordantly 0 time: 6985758 (23.71%)
+		Aligned concordantly 1 time: 9909284 (33.63%)
+		Aligned concordantly >1 times: 12332090 (41.86%)
+		Aligned discordantly 1 time: 234451 (0.80%)
+	Total unpaired reads: 13971516
+		Aligned 0 time: 7815928 (55.94%)
+		Aligned 1 time: 2496131 (17.87%)
+		Aligned >1 times: 3659457 (26.19%)
+	Overall alignment rate: 86.74%
+Aligning 3RC done: Sun Jun 28 12:50:17 AM PKT 2026
+Aligning 3RT started: Sun Jun 28 12:50:17 AM PKT 2026
+HISAT2 summary stats:
+	Total pairs: 23803277
+		Aligned concordantly or discordantly 0 time: 5795146 (24.35%)
+		Aligned concordantly 1 time: 7924143 (33.29%)
+		Aligned concordantly >1 times: 9882121 (41.52%)
+		Aligned discordantly 1 time: 201867 (0.85%)
+	Total unpaired reads: 11590292
+		Aligned 0 time: 6494067 (56.03%)
+		Aligned 1 time: 2102176 (18.14%)
+		Aligned >1 times: 2994049 (25.83%)
+	Overall alignment rate: 86.36%
+Aligning 3RT done: Sun Jun 28 01:39:56 AM PKT 2026
+Aligning 3SC started: Sun Jun 28 01:39:56 AM PKT 2026
+HISAT2 summary stats:
+	Total pairs: 37005061
+		Aligned concordantly or discordantly 0 time: 10094485 (27.28%)
+		Aligned concordantly 1 time: 11511497 (31.11%)
+		Aligned concordantly >1 times: 15162321 (40.97%)
+		Aligned discordantly 1 time: 236758 (0.64%)
+	Total unpaired reads: 20188970
+		Aligned 0 time: 13137836 (65.07%)
+		Aligned 1 time: 2752756 (13.63%)
+		Aligned >1 times: 4298378 (21.29%)
+	Overall alignment rate: 82.25%
+Aligning 3SC done: Sun Jun 28 02:43:02 AM PKT 2026
+Aligning 3ST started: Sun Jun 28 02:43:02 AM PKT 2026
+HISAT2 summary stats:
+	Total pairs: 25165553
+		Aligned concordantly or discordantly 0 time: 9009437 (35.80%)
+		Aligned concordantly 1 time: 7204658 (28.63%)
+		Aligned concordantly >1 times: 8771417 (34.85%)
+		Aligned discordantly 1 time: 180041 (0.72%)
+	Total unpaired reads: 18018874
+		Aligned 0 time: 13610640 (75.54%)
+		Aligned 1 time: 1843530 (10.23%)
+		Aligned >1 times: 2564704 (14.23%)
+	Overall alignment rate: 72.96%
+Aligning 3ST done: Sun Jun 28 03:24:46 AM PKT 2026

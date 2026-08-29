@@ -1,0 +1,14 @@
+Step 1: Running PSAURON. This can take awhile, set -v to track progress.
+Citation: M. J. Sommer, A. Zimin, S. L. Salzberg, PSAURON: a tool for assessing protein annotation across a broad range of species. NAR Genom. Bioinform. 7, lqae189 (2025).
+Retaining long ORFs using dynamic length threshold with FDR=0.1
+Loading transcripts at /home/ubuntu/download/sugarcane_project/L3/evidentialgene/okayset/all_transcripts_combined.okay.mrna
+Loaded 685331 sequences.
+Loading transcripts at /home/ubuntu/download/sugarcane_project/L3/transdecoder/longest_orfs.cds
+Loaded 1986377 sequences.
+Done.
+Step 2: No homology search results provided, skipping
+Done.
+Step 3: Deciding upon final ORFs
+Loading LongOrfs output from /home/ubuntu/download/sugarcane_project/L3/transdecoder
+Selecting single best ORF per transcript
+Writing final output to current working directory
